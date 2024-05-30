@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang='es'>
+<head>
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Document</title>
+    <link rel='stylesheet' href='css/estilos.css'>
+    <link rel='icon' href='../img/icono_burger.png' type='image/x-icon'>
+
+<!-- LINKS DE ESTILOS DE TEXTO -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main class="w-screen h-screen bg-color_fondo *:font-shadow select-none">
+        <div class="invisible lg:visible w-[70%] h-full absolute right-0">
+            <img src="../img/hamburgesaSistemaWeb.webp" class="object-cover w-full h-full">
+        </div>
+        <article class="relative w-full h-max lg:h-screen lg:flex lg:justify-start">
+            <section class="lg:bg-mostaza lg:top-0 lg:w-[30%] w-full h-full relative top-6 flex items-center flex-col" >
+                <a href="../index.html" class=" lg:mt-3 rounded-full p-2 transition-all hover:bg-marron_claro"><img src="../img/arrow-left.svg"></img></a>
+                <h1 class="text-[50px] my-7">INICIO DE SESION</h1>
+                <form class="  *:font-bold text-xl flex flex-col justify-center items-start w-full h-max *:w-full *:h-8 px-10 md:px-20 lg:px-10">
+                    <label>
+                        Correo:
+                    </label>
+                        <input type="email" required class=" peer input_estilos">
+                    <label>
+                        Contraseña:
+                    </label>
+                        <input type="password" required class="input_estilos">
+
+                        <input type="submit" value="INICIAR SESION" class="bg-white self-end peer-invalid:invisible hover:text-white hover:bg-marron transition-colors">
+                    </form>
+            </section>
+        </article>
+    </main>
+</body>
+</html> 

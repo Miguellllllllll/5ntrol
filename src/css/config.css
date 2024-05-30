@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .estilo_botones_mobile {
+        @apply relative inline-block w-full p-3 bg-mostaza border-l-4 border-marron
+        estilos_after font-shadow font-bold text-2xl md:text-3xl md:mt-10
+    }
+    .estilos_after{
+        @apply after:block after:bg-black after:opacity-15 after:w-0  after:h-full after:absolute after:top-0 after:left-0 after:transition-[width] after:duration-75 after:ease-out hover:after:w-full
+    }
+    .input_estilos{
+        @apply mb-4 outline-none required:border-red-500 invalid:border-red-500 valid:border-green-500 font-sans font-light border-b-4 bg-slate-100 
+    }
+}
+
+
